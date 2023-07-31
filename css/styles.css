@@ -1,0 +1,230 @@
+/* Global Layout Set-up */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+}
+
+hr {
+  border: 1px solid rgb(211, 211, 211);
+  margin: 2em 0;
+}
+
+p {
+  margin-top: 1em;
+}
+
+.checkbox:first-child {
+  margin-top: 1em;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  color: #fff;
+  padding: 1.5em;
+  margin-bottom: 2em;background-color: #556;
+  background: #355c7d;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+
+h1 {
+  font-size: 24px;
+  font-family: 'Comfortaa', Helvetica, sans-serif;
+  text-shadow: 1px 1px 3px black;
+  margin: .5em;
+}
+
+legend {
+  font-size: 24px;
+}
+
+/* Intro */
+
+section {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  margin: 1em 0;
+  font-style: italic;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+/* Form */
+
+form {
+  margin-top: 1em;
+}
+
+.flexform {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexform,
+.btn-input {
+  margin: 1em 0;
+}
+
+.flexform:last-of-type { /* Removes bottom margin from last for element in contact section */
+  margin-bottom: 0;
+}
+
+label {
+  margin: auto 0;
+}
+
+.label {
+  margin: .75em 0;
+  font-family: Helvetica;
+  font-weight: 100;
+}
+
+.txt-input {
+  height: 3em;
+  max-width: 100%;
+  border: none;
+  background-color: #eff0f1;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.txt-input-last {
+  height: 3em;
+  width: 50%;
+  border: none;
+  background-color: #eff0f1;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+textarea {
+  height: 3em;
+  border: none;
+  background-color: #eff0f1;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+select {
+  width: 100%;
+  height: 3em;
+  border: none;
+  background-color: #eff0f1;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+input:focus {
+  outline: 3px solid rgb(28, 98, 119);
+  background-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.2, -2, 0.8, 2);
+} 
+
+textarea:focus {
+  outline: 3px solid rgb(28, 98, 119);
+  background-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.2, -2, 0.8, 2);
+}
+
+select:focus {
+  outline: 3px solid rgb(28, 98, 119);
+  background-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.2, -2, 0.8, 2);
+}
+
+.newsletter {
+  display: block;
+}
+
+.usr-comnts {
+  margin-top: 1em;
+}
+
+textarea {
+  width: 100%;
+  height: 7em;
+  margin: 1em 0;
+  background-color: #eff0f1;
+  border: none;
+  border-radius: 4px;
+}
+
+#submit {
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #000021;
+  background: #1de9b6;
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+#submit:hover {
+  transition: all .1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px rgb(28, 98, 119);
+}
+
+fieldset {
+  border: none;
+}
+
+/* Placeholder Styling */
+
+input::placeholder {
+  font-style: italic;
+  text-align: end;
+  color: #bcbcbc;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: #bcbcbc;
+}
+
+/* Styles for larger screens */
+
+@media (max-width: 320px) {}
+
+@media (min-width: 768px) {
+  .flexform {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.txt-input {
+    max-width: 450px;
+    width: 70%;
+  }
+
+.txt-input-last {
+  width: 25%;
+  margin-right: 225px;
+}
+
+  select {
+    max-width: 450px;
+    width: 70%;
+  }
+
+}
+
+@media (min-width: 1024px) {}

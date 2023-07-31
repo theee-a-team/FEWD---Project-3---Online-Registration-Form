@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>The Code Review: Newsletter Sign-Up Form</title>
+  </head>
+
+  <body>
+      <header>
+        <h1>THE CODE REVIEW</h1>
+      </header>
+
+      <main>
+        <section>
+          <h2>Signup for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+          <hr>
+        <form>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="flexform">
+              <label class="label" for="user-name">Full Name</label>
+              <input class="txt-input" required type="text" id="user-name" name="user-name" placeholder="Required">
+            </div>
+            <div class="flexform">
+              <label class="label" for="user-email">Email Address</label>
+              <input class="txt-input" required type="text" id="user-email" name="user-email" placeholder="Required">
+            </div>
+            <div class="flexform">
+              <label class="label" for="tel">Phone Number</label>
+              <input class="txt-input" type="text" id="tel" name="tel" placeholder="Add dialling code if needed">
+            </div>
+            <div class="flexform">
+              <label class="label" for="address1">Street Adress</label>
+              <input class="txt-input" type="text" id="address1" name="address1" placeholder="Include apartment or office details">
+            </div>
+            <div class="flexform">
+              <label class="label" for="city">City</label>
+              <input class="txt-input" type="text" id="city" name="city" placeholder="Add city name">
+            </div>
+            <div class="flexform">
+              <label class="label" for="province">Province</label>
+              <select id="province" name="province">
+                <option value="" disabled selected hidden>Select province</option>
+                <option value="EC">Eastern Cape</option>
+                <option value="FS">Free State</option>
+                <option value="GP">Gauteng</option>
+                <option value="KZN">KwaZulu-Natal</option>
+                <option value="LP">Limpopo</option>
+                <option value="MP">Mpumalanga</option>
+                <option value="NW">North West</option>
+                <option value="NC">Northern Cape</option>
+                <option value="WC">Western Cape</option>
+              </select>
+            </div>
+            <div class="flexform">
+              <label class="label" for="postal-code">Postal Code</label>
+              <input class="txt-input-last" type="text" id="postal-code" placeholder="4-digit code">
+            </div>
+          </fieldset>
+          <hr>
+
+            <div class="newsletter">
+                <fieldset>
+                  <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive:</p>
+                    <div class="btn-input">
+                      <input type="checkbox" id="html-news" name="newsletter-topic" value="html-news">
+                      <label for="html-news">HTML News</label>
+                    </div>
+                    <div class="btn-input">
+                      <input type="checkbox" id="css-news" name="newsletter-topic" value="css-news">
+                      <label for="css-news">CSS News</label>
+                    </div>
+                    <div class="btn-input">
+                      <input type="checkbox" id="js-news" name="newsletter-topic" value="js-news">
+                      <label for="js-news">Javascript News</label><br>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+              <fieldset>
+                <p>Newsletter format:</p>
+                <div class="btn-input">
+                  <input type="radio" id="html" name="format" value="html">
+                  <label for="html">HTML</label><br>
+                </div>
+                <div class="btn-input">
+                  <input type="radio" id="plaintext" name="format" value="plaintext">
+                  <label for="html">Plain text</label><br>
+                </div>
+              </fieldset>
+              <div class="usr-comnts">
+                <label for="user-comments">Other topics you'd like to hear about:</label><br>
+                <textarea id="user-comments" name="user-comments" placeholder="I'm interested in..."></textarea>
+              </div>
+            </div>
+          <input type="submit" id="submit" class="button-56">
+        </form>
+      </main>
+
+      <footer>
+        Copyright The Code Review
+      </footer>
+  </body>
+  
+</html>
